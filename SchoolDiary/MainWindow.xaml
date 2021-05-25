@@ -1,0 +1,25 @@
+﻿<Window x:Class="SchoolDiary.MainWindow"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolDiary"
+        mc:Ignorable="d"
+        Title="Электронный дневник" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="360,252,0,0" VerticalAlignment="Top" Width="75" Click="EntryStudent" Name="en_student"  />
+        <TextBox x:Name="login_text" HorizontalAlignment="Left" Height="23" Margin="338,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="338,130,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="338,179,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="password_text" HorizontalAlignment="Left" Margin="338,210,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <RadioButton IsChecked="True" Content="Студент" HorizontalAlignment="Left" Margin="293,110,0,0" VerticalAlignment="Top" Width="120"/>
+        <RadioButton  Unchecked="EntryStudent" Checked="EntryTeacher" Content="Преподаватель" HorizontalAlignment="Left" Margin="391,110,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="360,252,0,0" VerticalAlignment="Top" Width="75" Click="EntryTeacher" Name="en_teacher" Visibility="Hidden"  />
+        <Label x:Name="check_correct" Content="Проверьте правильность введённых данных" HorizontalAlignment="Left" Margin="264,297,0,0" VerticalAlignment="Top" Width="273" Foreground="Red" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

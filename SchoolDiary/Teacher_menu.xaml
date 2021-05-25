@@ -1,0 +1,18 @@
+﻿<Window x:Class="SchoolDiary.Teacher_menu"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolDiary"
+        mc:Ignorable="d"
+        Title="Электронный дневник" Height="450" Width="800">
+    <Grid>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="722,10,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
+        <Button x:Name="add_mark" Content="Выставить оценку" HorizontalAlignment="Left" Margin="299,109,0,0" VerticalAlignment="Top" Width="187" Height="47"/>
+        <Button x:Name="check_all_stat" Content="Просмотреть успеваемость" HorizontalAlignment="Left" Margin="299,161,0,0" VerticalAlignment="Top" Width="187" Height="47"/>
+        <Button x:Name="edit_marks" Content="Редактировать оценки" HorizontalAlignment="Left" Margin="299,213,0,0" VerticalAlignment="Top" Width="187" Height="47"/>
+        <Button x:Name="check_groups" Content="Группы" HorizontalAlignment="Left" Margin="299,265,0,0" VerticalAlignment="Top" Width="187" Height="47"/>
+
+    </Grid>
+</Window>
